@@ -11,9 +11,13 @@ count EQU (LENGTHOF dwarray)
 
 .code
 main proc
-	
-	;Your code goes here
-	
+	mov  edi,OFFSET dwarray		; 1: EDI = address of dwarray
+	mov  ecx,LENGTHOF dwarray		; 2: initialize loop counter
+	mov  eax,0
+
+LoopStart:					;Loop throught the array
+	sub ;Subtract the value from the next value in the array
+
 	invoke ExitProcess,0
 main endp
 end main
